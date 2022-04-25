@@ -1,0 +1,9 @@
+.hover:hover {
+  transform: scale(1.2);
+  transition: all 0.2s cubic-bezier(0, 0, 0.54, 0.97) 0s;
+}
+
+.hover:active {
+  transform: scale(0.9);
+  transition: all 0.2s cubic-bezier(0, 0, 0.54, 0.97) 0s;
+}
