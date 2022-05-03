@@ -1,57 +1,430 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Princess Mononoke</title>
-    <link rel="icon" type="image/x-icon" href="./assets/images/icon.svg" />
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/animation.css" />
-    <link
-      href="https://api.fontshare.com/css?f[]=satoshi@300,400,500,700,900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <div class="container">
-      <nav class="nav">
-        <div class="nav__icon-container">
-          <a href="#" class="nav__icon">
-            <img
-              src="./assets/images/iconWhite.svg"
-              alt="Infinity Studio Logo"
-              class="nav__icon"
-            />
-          </a>
-        </div>
-
-        <ul class="nav__list">
-          <li class="hover">
-            <a href="#">Home</a>
-          </li>
-          <li class="hover">
-            <a href="#">Plot</a>
-          </li>
-          <li class="hover">
-            <a href="#">Characters</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="hero-section">
-        <h3 class="hero-section__studio">Studio Ghibli</h3>
-        <h1 class="hero-section__title">Princess Mononoke</h1>
-        <p class="hero-section__plot">
-          In the 14th century, the harmony that humans, animals and gods have
-          enjoyed begins to crumble. The protagonist, young Ashitaka - infected
-          by an animal attack, seeks a cure from the deer-like god Shishigami.
-        </p>
-        <div class="btn-container">
-          <button class="btn btn-outline">More</button>
-          <button class="btn btn-primary">Watch Trailer</button>
-        </div>
-      </div>
-    </div>
-  </body>
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Princess Mononoke</title>
+      <link rel="icon" type="image/x-icon" href="./assets/images/icon.svg" />
+      <link rel="stylesheet" href="./css/reset.css" />
+      <link rel="stylesheet" href="./css/style.css" />
+      <link rel="stylesheet" href="./css/components.css" />
+      <link rel="stylesheet" href="./css/animation.css" />
+      <link
+         href="https://api.fontshare.com/css?f[]=satoshi@300,400,500,700,900&display=swap"
+         rel="stylesheet"
+      />
+   </head>
+   <body>
+      <header class="container">
+         <nav class="nav">
+            <div class="nav__icon-container slide-in-top delay-9">
+               <a href="#" class="nav__icon">
+                  <img
+                     src="./assets/images/iconWhite.svg"
+                     alt="Infinity Studio Logo"
+                     class="nav__icon"
+                  />
+               </a>
+            </div>
+            <button class="menu hvr">
+               <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  height="24"
+               >
+                  <path fill="none" d="M0 0h24v24H0z" />
+                  <path d="M16 18v2H5v-2h11zm5-7v2H3v-2h18zm-2-7v2H8V4h11z" />
+               </svg>
+            </button>
+            <ul class="nav__list">
+               <li class="hvr slide-in-top delay-10">
+                  <a href="#">Home</a>
+               </li>
+               <li class="hvr slide-in-top delay-11">
+                  <a href="#">Plot</a>
+               </li>
+               <li class="hvr slide-in-top delay-12">
+                  <a href="#">Characters</a>
+               </li>
+            </ul>
+         </nav>
+         <section class="hero-section">
+            <h3 class="hero-section__studio slide-in-left delay-3">
+               Studio Ghibli
+            </h3>
+            <h1 class="hero-section__title slide-in-left">Princess Mononoke</h1>
+            <p class="hero-section__plot slide-in-left delay-5">
+               In the 14th century, the harmony that humans, animals and gods
+               have enjoyed begins to crumble. The protagonist, young Ashitaka -
+               infected by an animal attack, seeks a cure from the deer-like god
+               Shishigami.
+            </p>
+            <div class="btn-container">
+               <button class="btn btn-outline scale-in-center delay-8">
+                  More
+               </button>
+               <button class="btn btn-primary scale-in-center delay-8">
+                  Watch Trailer
+               </button>
+            </div>
+         </section>
+      </header>
+      <main class="main">
+         <section class="plot">
+            <h1 class="main-title">Plot</h1>
+            <div class="plot-content flex-center mb-4">
+               <div class="plot-content-information plot-60">
+                  <p>
+                     In Muromachi Japan, an Emishi village is attacked by a
+                     hideous demon. The last Emishi prince, Ashitaka, kills it
+                     before it reaches the village, but it manages to grasp his
+                     arm and curse him before its death. The curse grants him
+                     some superhuman strength, but it also causes him pain and
+                     will eventually kill him. The villagers discover that the
+                     demon was a boar god, corrupted by an iron ball lodged in
+                     his body. The village's wise woman tells Ashitaka that he
+                     may find a cure in the western lands that the demon came
+                     from, and that he cannot return to his homeland.
+                  </p>
+                  <br />
+                  <p>
+                     Heading west, Ashitaka meets Jigo, an opportunistic monk
+                     who tells Ashitaka he may find help from the Great Forest
+                     Spirit, a deer-like animal god by day and a giant Night
+                     Walker by night. Nearby, men on a cliffside herd oxen to
+                     their home of Iron Town, led by Lady Eboshi, and repel an
+                     attack by a wolf pack led by the wolf goddess Moro, whom
+                     Eboshi wounds with a gun shot. Riding one of the wolves is
+                     San, a human girl. Down below, Ashitaka encounters San and
+                     the wolves, who rebuff his greeting. He then manages to
+                     rescue two of the men fallen from the cliff and transports
+                     them back through the forest, where he briefly glimpses the
+                     Great Forest Spirit.
+                  </p>
+               </div>
+               <div class="plot-content-image">
+                  <img
+                     src="./assets/images/plot1.png"
+                     alt="Plot"
+                     class="plot-content-image__img"
+                  />
+               </div>
+            </div>
+            <div class="plot-content flex-center reverse mb-4">
+               <div class="plot-content-information plot-60">
+                  <p>
+                     Ashitaka and the survivors arrive at Iron Town, where he is
+                     greeted with fascination. Iron Town is a refuge for
+                     outcasts and lepers employed to process iron and create
+                     firearms, such as hand cannons and matchlock muskets.
+                     Ashitaka learns that the town was built by clearcutting
+                     forests to mine the iron, leading to conflicts with Asano,
+                     a local daimyō, and a giant boar god named Nago. Eboshi
+                     admits that she shot Nago, incidentally turning him into
+                     the demon that attacked Ashitaka's village. She also
+                     reveals that San, dubbed Princess Mononoke, was raised by
+                     the wolves and resents humankind.
+                  </p>
+                  <br />
+                  <p>
+                     Suddenly, San infiltrates Iron Town to kill Eboshi.
+                     Ashitaka intervenes and quickly subdues Eboshi and San
+                     while they are locked in combat. Amidst the hysteria, he is
+                     shot by a villager but the curse gives him strength to
+                     carry San out of the village. San awakens and prepares to
+                     kill the weakened Ashitaka, but hesitates when he tells her
+                     that she is beautiful. She decides to trust him after the
+                     Forest Spirit heals his bullet wound that night. The next
+                     day, a boar clan led by the blind god Okkoto plans to
+                     attack Iron Town to save the forest. Eboshi sets out to
+                     kill the Forest Spirit with Jigo; Eboshi intends to give
+                     the god's head to the Emperor (who believes it will grant
+                     him immortality) in return for protection from Lord Asano,
+                     while Jigo desires the large reward being offered.
+                  </p>
+               </div>
+               <div class="plot-content-image">
+                  <img
+                     src="./assets/images/plotv2.jpg"
+                     alt="Plot"
+                     class="plot-content-image__img"
+                  />
+               </div>
+            </div>
+            <div class="plot-content flex-center mb-4">
+               <div class="plot-content-information plot-60">
+                  <p>
+                     Ashitaka recovers and finds Iron Town besieged by Asano's
+                     samurai. The boar clan has also been annihilated in battle,
+                     and Okkoto is badly wounded. Jigo's men then trick Okkoto
+                     into leading them to the Forest Spirit. San tries to stop
+                     Okkoto but is swept up as his pain corrupts him into a
+                     demon. As everyone clashes at the pool of the Forest
+                     Spirit, Ashitaka saves San while the Forest Spirit kills
+                     Moro and Okkoto. As it begins to transform into the Night
+                     Walker, Eboshi decapitates it. Jigo steals the head, while
+                     the Forest Spirit's body bleeds ooze that spreads over the
+                     land and kills anything it touches. The forest and kodama
+                     begin to die; Moro's head comes alive and bites off
+                     Eboshi's right arm, but she survives.
+                  </p>
+                  <br />
+                  <p>
+                     After Iron Town is evacuated, Ashitaka and San pursue Jigo
+                     and retrieve the head, returning it to the Forest Spirit.
+                     The Spirit dies but its form washes over the land, healing
+                     it and lifting Ashitaka's curse. Ashitaka stays to help
+                     rebuild Iron Town, but promises San he will visit her in
+                     the forest. Eboshi vows to build a better town. The forest
+                     begins to regrow as a single kodama emerges from the brush.
+                  </p>
+               </div>
+               <div class="plot-content-image">
+                  <img
+                     src="./assets/images/banner2.jpg"
+                     alt="Plot"
+                     class="plot-content-image__img"
+                  />
+               </div>
+            </div>
+         </section>
+         <section class="characters mt-114">
+            <h1 class="main-title">Characters</h1>
+            <div class="characters-container">
+               <div class="mb-8">
+                  <h3 class="characters-title">Protagonist</h3>
+                  <div class="card-flex">
+                     <div class="card">
+                        <div class="card-image">
+                           <img
+                              src="./assets/images/c1.png"
+                              alt="San Picture"
+                              class="card-image-img"
+                           />
+                        </div>
+                        <h4 class="card-title">Momonoke Hime / San</h4>
+                     </div>
+                     <div class="card">
+                        <div class="card-image">
+                           <img
+                              src="./assets/images/c2.png"
+                              alt="San Picture"
+                              class="card-image-img"
+                           />
+                        </div>
+                        <h4 class="card-title">Ashitaka</h4>
+                     </div>
+                  </div>
+               </div>
+               <div class="mb-8">
+                  <h3 class="characters-title">Shinto Gods</h3>
+                  <div class="card-flex">
+                     <div class="card">
+                        <div class="card-image">
+                           <img
+                              src="./assets/images/c3.png"
+                              alt="San Picture"
+                              class="card-image-img"
+                           />
+                        </div>
+                        <h4 class="card-title">
+                           Shishigami / The Great Forest Spirit
+                        </h4>
+                     </div>
+                     <div class="card">
+                        <div class="card-image">
+                           <img
+                              src="./assets/images/c4.png"
+                              alt="San Picture"
+                              class="card-image-img"
+                           />
+                        </div>
+                        <h4 class="card-title">Moro-no-Kimi / Moro</h4>
+                     </div>
+                     <div class="card">
+                        <div class="card-image">
+                           <img
+                              src="./assets/images/c5.png"
+                              alt="San Picture"
+                              class="card-image-img"
+                           />
+                        </div>
+                        <h4 class="card-title">Moro's cubs</h4>
+                     </div>
+                     <div class="card">
+                        <div class="card-image">
+                           <img
+                              src="./assets/images/c6.png"
+                              alt="San Picture"
+                              class="card-image-img"
+                           />
+                        </div>
+                        <h4 class="card-title">The Kodama / Wood Sprites</h4>
+                     </div>
+                     <div class="card">
+                        <div class="card-image">
+                           <img
+                              src="./assets/images/c7.png"
+                              alt="San Picture"
+                              class="card-image-img"
+                           />
+                        </div>
+                        <h4 class="card-title">Okkotonushi / Okkoto</h4>
+                     </div>
+                     <div class="card">
+                        <div class="card-image">
+                           <img
+                              src="./assets/images/c15.webp"
+                              alt="San Picture"
+                              class="card-image-img"
+                           />
+                        </div>
+                        <h4 class="card-title">Nago</h4>
+                     </div>
+                  </div>
+               </div>
+               <div class="mb-8">
+                  <h3 class="characters-title">Residents of Iron Town</h3>
+                  <div class="card-flex">
+                     <div class="card">
+                        <div class="card-image">
+                           <img
+                              src="./assets/images/c8.png"
+                              alt="San Picture"
+                              class="card-image-img"
+                           />
+                        </div>
+                        <h4 class="card-title">Lady Eboshi</h4>
+                     </div>
+                     <div class="card">
+                        <div class="card-image">
+                           <img
+                              src="./assets/images/c9.png"
+                              alt="San Picture"
+                              class="card-image-img"
+                           />
+                        </div>
+                        <h4 class="card-title">Gonza</h4>
+                     </div>
+                     <div class="card">
+                        <div class="card-image">
+                           <img
+                              src="./assets/images/c10.png"
+                              alt="San Picture"
+                              class="card-image-img"
+                           />
+                        </div>
+                        <h4 class="card-title">Kohroku</h4>
+                     </div>
+                     <div class="card">
+                        <div class="card-image">
+                           <img
+                              src="./assets/images/c11.png"
+                              alt="San Picture"
+                              class="card-image-img"
+                           />
+                        </div>
+                        <h4 class="card-title">Toki</h4>
+                     </div>
+                     <div class="card">
+                        <div class="card-image">
+                           <img
+                              src="./assets/images/c18.webp"
+                              alt="San Picture"
+                              class="card-image-img"
+                           />
+                        </div>
+                        <h4 class="card-title">Kiyo</h4>
+                     </div>
+                     <div class="card">
+                        <div class="card-image">
+                           <img
+                              src="./assets/images/c20.webp"
+                              alt="San Picture"
+                              class="card-image-img"
+                           />
+                        </div>
+                        <h4 class="card-title">Osa</h4>
+                     </div>
+                  </div>
+               </div>
+               <div>
+                  <h3 class="characters-title">Other Characters</h3>
+                  <div class="card-flex">
+                     <div class="card">
+                        <div class="card-image">
+                           <img
+                              src="./assets/images/c12.png"
+                              alt="San Picture"
+                              class="card-image-img"
+                           />
+                        </div>
+                        <h4 class="card-title">Yakul</h4>
+                     </div>
+                     <div class="card">
+                        <div class="card-image">
+                           <img
+                              src="./assets/images/c13.png"
+                              alt="San Picture"
+                              class="card-image-img"
+                           />
+                        </div>
+                        <h4 class="card-title">Jiko-Bou / Jigo</h4>
+                     </div>
+                     <div class="card">
+                        <div class="card-image">
+                           <img
+                              src="./assets/images/c14.jpg"
+                              alt="San Picture"
+                              class="card-image-img"
+                           />
+                        </div>
+                        <h4 class="card-title">Lord Asano</h4>
+                     </div>
+                     <div class="card">
+                        <div class="card-image">
+                           <img
+                              src="./assets/images/c16.webp"
+                              alt="San Picture"
+                              class="card-image-img"
+                           />
+                        </div>
+                        <h4 class="card-title">Hi-Sama</h4>
+                     </div>
+                     <div class="card">
+                        <div class="card-image">
+                           <img
+                              src="./assets/images/c17.webp"
+                              alt="San Picture"
+                              class="card-image-img"
+                           />
+                        </div>
+                        <h4 class="card-title">Kaya</h4>
+                     </div>
+                     <div class="card">
+                        <div class="card-image">
+                           <img
+                              src="./assets/images/c19.webp"
+                              alt="San Picture"
+                              class="card-image-img"
+                           />
+                        </div>
+                        <h4 class="card-title">Ji</h4>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+      <footer class="footer">
+         <img
+            src="./assets/images/iconBlack.svg"
+            alt="Logo"
+            class="footer-logo"
+         />
+         <h4 class="footer-text">Copy © 2022. All Rights Reserved</h4>
+      </footer>
+   </body>
 </html>
