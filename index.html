@@ -27,7 +27,7 @@
                   />
                </a>
             </div>
-            <button class="menu hvr">
+            <button id="openSidebar" class="menu hvr slide-in-top">
                <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
@@ -39,14 +39,15 @@
                </svg>
             </button>
             <ul class="nav__list">
-               <li class="hvr slide-in-top delay-10">
+               <li id="close" class="slide-in-top delay-10 hvr">close</li>
+               <li id="openSidebar" class="slide-in-top delay-10 hvr">
                   <a href="#">Home</a>
                </li>
-               <li class="hvr slide-in-top delay-11">
-                  <a href="#">Plot</a>
+               <li id="openSidebar" class="hvr slide-in-top delay-11">
+                  <a href="#plot">Plot</a>
                </li>
-               <li class="hvr slide-in-top delay-12">
-                  <a href="#">Characters</a>
+               <li id="openSidebar" class="hvr slide-in-top delay-12">
+                  <a href="#characters">Characters</a>
                </li>
             </ul>
          </nav>
@@ -72,7 +73,7 @@
          </section>
       </header>
       <main class="main">
-         <section class="plot">
+         <section id="plot" class="plot">
             <h1 class="main-title">Plot</h1>
             <div class="plot-content flex-center mb-4">
                <div class="plot-content-information plot-60">
@@ -190,7 +191,7 @@
                </div>
             </div>
          </section>
-         <section class="characters mt-114">
+         <section id="characters" class="characters mt-114">
             <h1 class="main-title">Characters</h1>
             <div class="characters-container">
                <div class="mb-8">
@@ -426,5 +427,7 @@
          />
          <h4 class="footer-text">Copy © 2022. All Rights Reserved</h4>
       </footer>
+
+      <script src="./js/app.js"></script>
    </body>
 </html>

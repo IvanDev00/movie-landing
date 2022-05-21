@@ -78,6 +78,19 @@ body {
   color: var(--white);
   font-size: 2.4rem;
   font-weight: medium;
+  transition: all 0.4s ease;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  transition: all 0.4s ease;
+  height: 7.6rem !important;
+  z-index: 999;
+  background: rgb(37, 37, 37);
+  box-shadow: 10px 10px 32px 0px rgba(18, 18, 18, 0.28);
+    -webkit-box-shadow: 10px 10px 32px 0px rgba(18, 18, 18, 0.28);
+    -moz-box-shadow: 10px 10px 32px 0px rgba(18, 18, 18, 0.28);
 }
 
 .nav__icon-container {
@@ -96,19 +109,19 @@ body {
   z-index: 50;
   position: fixed;
   flex-direction: column;
-  right: 0;
+  right: -1000px;
   top: 0;
   bottom: 0;
   color: var(--dark);
   font-weight: 900;
   padding: 4rem;
-  align-items: flex-end;
+  align-items: center;
   gap: 4rem;
   background: rgba(255, 255, 255, 0.7);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(12.5px);
   -webkit-backdrop-filter: blur(12.5px);
- 
+  transition: all 0.5s cubic-bezier(0.230, 1.000, 0.320, 1.000);
 }
 
 .menu {
@@ -117,6 +130,7 @@ body {
   margin-left: auto;
   border: 0;
   color: var(--white);
+  cursor: pointer;
 }
 
 .menu > * {
@@ -238,6 +252,7 @@ body {
     color: var(--white);
     font-weight: 500;
     top: 0;
+    
   }
 
   .menu {
@@ -279,6 +294,15 @@ body {
   .characters-container {
     margin-top: 5.6rem;
   }
+
+ 
+}
+
+@media (max-width: 800px) {
+  .show {
+      right: 0;
+      transition: all 0.5s cubic-bezier(0.230, 1.000, 0.320, 1.000);
+    }
 }
 
 
