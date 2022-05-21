@@ -109,11 +109,10 @@ body {
   z-index: 50;
   position: fixed;
   flex-direction: column;
-  right: -1000px;
   top: 0;
   bottom: 0;
   color: var(--dark);
-  font-weight: 900;
+  font-weight: 700;
   padding: 4rem;
   align-items: center;
   gap: 4rem;
@@ -131,12 +130,21 @@ body {
   border: 0;
   color: var(--white);
   cursor: pointer;
+  outline: none;
+}
+
+.menu-dark {
+  color: var(--dark);
 }
 
 .menu > * {
   width: 3.6rem;
   height: 3.6rem;
   fill: currentColor;
+}
+
+.closeMenu {
+  margin-left: auto;
 }
 
 .hero-section {
@@ -252,7 +260,6 @@ body {
     color: var(--white);
     font-weight: 500;
     top: 0;
-    
   }
 
   .menu {
@@ -295,17 +302,21 @@ body {
     margin-top: 5.6rem;
   }
 
+  .closeMenu {
+    display: none!important;
+  }
  
 }
 
 @media (max-width: 800px) {
+  .nav__list {
+    right: -1000px;
+  }
   .show {
       right: 0;
       transition: all 0.5s cubic-bezier(0.230, 1.000, 0.320, 1.000);
     }
 }
-
-
 
 
 @media (min-width: 1024px) {

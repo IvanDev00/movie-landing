@@ -1,5 +1,6 @@
 const header = document.querySelector(".nav");
-const links = document.querySelector("#openSidebar");
+const links = document.querySelectorAll(".toggleMenu");
+const menu = document.querySelector("#openSidebar");
 const close = document.querySelector("#close");
 
 window.addEventListener("scroll", function () {
@@ -11,5 +12,10 @@ const hideSidebar = () => {
    console.log("Hello");
 };
 
-links.addEventListener("click", hideSidebar);
+menu.addEventListener("click", hideSidebar);
 close.addEventListener("click", hideSidebar);
+
+
+links.forEach(function (link) {
+   link.addEventListener("click", hideSidebar);
+})
